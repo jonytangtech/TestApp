@@ -1,0 +1,12 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  # 打包时候用的名称   例如 fastlane app
+lane :develop do |options|
+   target = "TestApp"
+   configuration = "Debug"
+   gym(scheme: target, configuration: configuration, export_method:"development")
+     pgyer(api_key: "4f502b1d7304c1494e32cd18eb6b6241”)
+  end
+end
