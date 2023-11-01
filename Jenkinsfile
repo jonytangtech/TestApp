@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('test') {
       steps {
-        sh 'fastlane init'
+        echo '"test"'
       }
     }
 
